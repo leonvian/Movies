@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/flWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view_movie"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout style="@style/layoutMovieItens">
+
+                    <TextView
+                        android:id="@+id/text_view_vote_average"
+                        style="@style/TextViewItemMovie" />
+
+                    <TextView
+                        style="@style/TextViewItemMovie"
+                        android:text="@string/average"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/layoutMovieItens">
+
+                    <TextView
+                        android:id="@+id/text_view_votes"
+                        style="@style/TextViewItemMovie" />
+
+                    <TextView
+                        style="@style/TextViewItemMovie"
+                        android:text="@string/votes"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/layoutMovieItens">
+
+                    <TextView
+                        android:id="@+id/text_view_popularity"
+                        style="@style/TextViewItemMovie" />
+
+                    <TextView
+                        style="@style/TextViewItemMovie"
+                        android:text="@string/popularity"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_movie"
+                style="@style/TextViewTitle"
+                android:layout_gravity="center"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/text_view_genre"
+                style="@style/TextViewNormal"
+                android:layout_margin="4dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_view_movie_overview"
+                style="@style/TextViewNormal"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>
